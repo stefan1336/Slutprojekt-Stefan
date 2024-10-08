@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="/video/3194277-hd_1920_1080_30fps.mp4" />
+    </video>
+    <header>
+      <div class="head-container navbar" id="navbar">
+        <img
+          id="logo-type"
+          src="../images/nebula_ny-removebg-preview.png"
+          alt=""
+          class="light-logo"
+        />
+        <img
+          id="logo-type"
+          src="../images/darkside-removebg-preview.png"
+          alt=""
+          hidden
+          class="dark-logo"
+        />
+        <ul class="menu-container">
+          <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+          <div class="navbar-links" id="navbar-links">
+            <!-- <img
+              src="../images/icons8-lightsaber-48 (1).png"
+              alt=""
+              class="light-logo lightsaber"
+            />
+            <img
+              src="../images/icons8-lightsaber-48.png"
+              alt=""
+              hidden
+              class="dark-logo lightsaber"
+            /> -->
+            <li><a href="/pages/home.html">Home</a></li>
+            <li><a href="/pages/travels.html">Travels</a></li>
+            <li><a href="/pages/bookings.html">Booking</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <!-- <button class="btn-theme" onClick="toggleDarkLightMode()">
+              <i class="fa-regular fa-lightbulb"></i>
+            </button> -->
+          </div>
+        </ul>
+        <label class="inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer"
+            onClick="toggleDarkLightMode()"
+            onkeydown="handleKeyPress(event)"
+            checked
+          />
+          <div
+            class="relative w-11 h-6 bg-red-500 rounded-full peer peer-focus:ring-4 peer-focus:ring-slate-500 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          ></span>
+        </label>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content-left">
+        <h2 class="">Time for an Adventure?</h2>
+        <p>
+          Welcome to <strong>Nebula Flights</strong>, you're gateway to the
+          galaxy. Looking to explore new star systems or revisit old favorites?
+          With <strong>Nebula Flights</strong>, you can book your passage to the
+          most iconic and exotic planets in the galaxy. From bustling cityscapes
+          to remote outer-rim territories, your next adventure is just a
+          hyperjump away! Explore the Galaxy Like Never Before Whether it's your
+          first trip or you're a seasoned traveler,
+          <strong>Nebula Flights</strong> offers unique travel experiences to
+          the galaxy's most sought-after destinations. Walk the sands of
+          Tatooine, wander the forest moon of Endor, or feel the pull of the
+          Force on Dagobah. The galaxy is yours to discover.
+          <br />
+          <br />
+          <em>
+            Why Travel with <strong>Nebula Flights?</strong> At
+            <strong>Nebula Flights</strong>, we take pride in offering seamless
+            interplanetary travel, ensuring you experience the galaxy's wonders
+            like never before. With a fleet of state-of-the-art starships, the
+            finest travel guides, and tailored itineraries, we provide an
+            unparalleled travel experience for all beings—from Core Worlds
+            elites to Outer Rim adventurers.</em
+          >
+        </p>
+      </div>
+      <div class="content-right">
+        <img
+          src="../images/Executor_BF2.jpg"
+          alt="Galactic Journey"
+          id="ship-img"
+        />
+        <p class="content-text">
+          Your next adventure is waiting. Whether you're on a quest for
+          adventure, relaxation, or discovery, Nebula Flights is here to make it
+          happen.
+          <br />
+          <em><strong>Ready to book your trip?</strong></em>
+        </p>
+        <a class="btn rounded-lg" href="/pages/travels.html">Book now!</a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <p>Author: <em>Stefan Johansson</em></p>
+        <em>© 2024. All rights reserved.</em>
+      </div>
+    </footer>
+    <script src="../javaScript/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="/video/856309-hd_1920_1080_30fps.mp4" />
+    </video>
+    <header>
+      <div class="head-container navbar" id="navbar">
+        <img
+          id="logo-type"
+          src="../images/nebula_ny-removebg-preview.png"
+          alt=""
+          class="light-logo"
+        />
+        <img
+          id="logo-type"
+          src="../images/darkside-removebg-preview.png"
+          alt=""
+          hidden
+          class="dark-logo"
+        />
+        <ul class="menu-container">
+          <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+          <div class="navbar-links" id="navbar-links">
+            <!-- <img
+              src="../images/icons8-lightsaber-48 (1).png"
+              alt=""
+              class="light-logo lightsaber"
+            />
+            <img
+              src="../images/icons8-lightsaber-48.png"
+              alt=""
+              hidden
+              class="dark-logo lightsaber"
+            /> -->
+            <li><a href="/pages/home.html">Home</a></li>
+            <li><a href="/pages/travels.html">Travels</a></li>
+            <li><a href="/pages/bookings.html">Booking</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <!-- <button class="btn-theme" onClick="toggleDarkLightMode()">
+              <i class="fa-regular fa-lightbulb"></i>
+            </button> -->
+          </div>
+        </ul>
+        <label class="inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer"
+            onClick="toggleDarkLightMode()"
+            onkeydown="handleKeyPress(event)"
+            checked
+          />
+          <div
+            class="relative w-11 h-6 bg-red-500 rounded-full peer peer-focus:ring-4 peer-focus:ring-slate-500 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          ></span>
+        </label>
+      </div>
+    </header>
+    <section class="section-container">
+      <div class="container">
+        <div class="form-container">
+          <h2 class="sectionTitle">Contact</h2>
+          <form action="">
+            <div className="form">
+              <!-- <label htmlFor="name" hidden>Name</label> -->
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div className="form">
+              <!-- <label htmlFor="email" hidden>Email</label> -->
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div className="form">
+              <!-- <label htmlFor="message" hidden>Message</label> -->
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button class="btn rounded-lg">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <p>Author: <em>Stefan Johansson</em></p>
+        <em>© 2024. All rights reserved.</em>
+      </div>
+    </footer>
+    <script src="../javaScript/app.js"></script>
+  </body>
+</html>

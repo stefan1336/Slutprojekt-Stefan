@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings</title>
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="/video/8474629-hd_1920_1080_30fps.mp4" />
+    </video>
+    <header>
+      <div class="head-container navbar" id="navbar">
+        <img
+          id="logo-type"
+          src="../images/nebula_ny-removebg-preview.png"
+          alt=""
+          class="light-logo"
+        />
+        <img
+          id="logo-type"
+          src="../images/darkside-removebg-preview.png"
+          alt=""
+          hidden
+          class="dark-logo"
+        />
+        <ul class="menu-container">
+          <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+          <div class="navbar-links" id="navbar-links">
+            <!-- <img
+              src="../images/icons8-lightsaber-48 (1).png"
+              alt=""
+              class="light-logo lightsaber"
+            />
+            <img
+              src="../images/icons8-lightsaber-48.png"
+              alt=""
+              hidden
+              class="dark-logo lightsaber"
+            /> -->
+            <li><a href="/pages/home.html">Home</a></li>
+            <li><a href="/pages/travels.html">Travels</a></li>
+            <li><a href="/pages/bookings.html">Booking</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <!-- <button class="btn-theme" onClick="toggleDarkLightMode()">
+              <i class="fa-regular fa-lightbulb"></i>
+            </button> -->
+          </div>
+        </ul>
+        <label class="inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            class="sr-only peer"
+            onClick="toggleDarkLightMode()"
+            onkeydown="handleKeyPress(event)"
+            checked
+          />
+          <div
+            class="relative w-11 h-6 bg-red-500 rounded-full peer peer-focus:ring-4 peer-focus:ring-slate-500 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          ></span>
+        </label>
+      </div>
+    </header>
+    <div class="travel-container">
+      <div class="card-container">
+        <div class="card">
+          <video
+            class="card-image"
+            autoplay
+            muted
+            loop
+            src="/video/2695085-hd_1920_1080_30fps.mp4"
+          ></video>
+          <p class="card-text">Earth Adventure</p>
+          <button class="btn rounded-lg">Book Now!</button>
+        </div>
+        <div class="card">
+          <video
+            class="card-image"
+            autoplay
+            muted
+            loop
+            src="/video/10800208-hd_1920_1080_30fps.mp4"
+          ></video>
+          <p class="card-text">Explore Naboo</p>
+          <button class="btn rounded-lg">Book Now!</button>
+        </div>
+        <div class="card">
+          <video
+            class="card-image"
+            autoplay
+            muted
+            loop
+            src="/video/4702442-hd_1920_1080_25fps.mp4"
+          ></video>
+          <p class="card-text">Discover Ilum</p>
+          <button class="btn rounded-lg">Book Now!</button>
+        </div>
+        <div class="card">
+          <video
+            class="card-image"
+            autoplay
+            muted
+            loop
+            src="/video/854422-hd_1920_1080_30fps.mp4"
+          ></video>
+          <p class="card-text">Milky Way Journey</p>
+          <button class="btn rounded-lg">Book Now!</button>
+        </div>
+      </div>
+      <div class="information">
+        <em
+          >Your Next Adventure Awaits Custom Itineraries: Plot your course to
+          famous landmarks like the Jedi Temple on Coruscant, the crystal caves
+          of Ilum, or the vibrant cityscapes of Naboo. Immersive Experiences:
+          Fly aboard iconic starships, from the Millennium Falcon to
+          Imperial-class Star Destroyers. Dive deep into the history and culture
+          of each planet, and connect with locals—whether they're smugglers,
+          Jedi, or droids. Personalized Travel: Travel alongside your own
+          astromech droid companion, stay in luxury accommodations on cloud
+          cities, or rough it in the wilderness of unknown regions. Whatever
+          your travel style, we've got you covered.</em
+        >
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <p>Author: <em>Stefan Johansson</em></p>
+        <em>© 2024. All rights reserved.</em>
+      </div>
+    </footer>
+    <script src="../javaScript/app.js"></script>
+  </body>
+</html>
