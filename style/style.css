@@ -289,31 +289,6 @@ em {
   max-width: 60%;
 }
 
-/* @media (max-width: 800px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    background-color: red !important; 
-  }
-
-  .content-left {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .content-right {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .content-image {
-    max-width: 90%;
-  }
-} */
-
 body:after {
   content: "mobil";
   background-color: #d0eb21;
