@@ -13,9 +13,26 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.css"
+      integrity="sha512-5gTxhbmgsOKfPP2+TeKslkMmyxF0Cmyr2YrJrfaXD/ChLHavFXGzDDG9ZiOca1P/2/5nXuujkB2BWymVKu1pPg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"
+      integrity="sha512-Vtot07oogPy4e0JzAfUgyvia0fATgR1PWWNG89EeQgPXmaIhjGQIFijUVxRn0TScCMCH57Y7eJSixmYYDJkJ1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <video autoplay muted loop id="background-video">
@@ -64,13 +81,64 @@
         </label>
       </div>
     </header>
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga placeat
-        distinctio sint libero cum officia totam nisi culpa ab est pariatur
-        animi officiis labore, harum quidem quaerat exercitationem soluta.
-        Voluptates?
+    <div class="travel-container">
+      <p class="information">
+        Book Your Journey with <strong>Nebula Flights</strong>!Ready to embark
+        on your next cosmic adventure? At <strong>Nebula Flights</strong>,
+        booking your journey to the stars has never been easier! With our
+        user-friendly booking system, you can secure your passage to the
+        galaxy's most breathtaking destinations in just a few clicks.
+        <br />
+        Tailored Travel Options: Whether you're looking for a relaxing getaway
+        on a tranquil moon or an action-packed expedition to an alien planet, we
+        offer customizable travel packages to suit every traveler's needs.
+        Choose from our wide range of destinations, including hidden gems and
+        iconic locations, and let us help you design the perfect itinerary.
+        <br />
+        Exclusive Deals: Sign up for our newsletter to receive exclusive offers
+        and early-bird specials. Stay updated on the latest travel deals,
+        seasonal promotions, and limited-time offers. Your dream trip is just a
+        booking away! <br />
+        Why Book with <strong>Nebula Flights</strong>? With a reputation for
+        excellence, <strong>Nebula Flights</strong> provides a seamless booking
+        experience that prioritizes your needs. Our dedicated customer service
+        team is here to assist you every step of the way, from selecting your
+        destination to making special requests for your journey. <br />
+        Join the Adventure: So, what are you waiting for? The galaxy is calling!
+        Book your adventure with <strong>Nebula Flights</strong> today, and get
+        ready to make memories that will last a lifetime. The stars are waiting
+        for you—let's take that leap into the unknown together!
       </p>
+      <div id="gallery" class="card-container">
+        <div class="booking-card">
+          <a href="../images/pexels-felixmittermeier-1146134.png"
+            ><img
+              class="booking-card-image"
+              src="../images/pexels-felixmittermeier-1146134.png"
+          /></a>
+        </div>
+        <div class="booking-card">
+          <a href="../images/pexels-kindelmedia-7527862.jpg"
+            ><img
+              class="booking-card-image"
+              src="../images/pexels-kindelmedia-7527862.jpg"
+          /></a>
+        </div>
+        <div class="booking-card">
+          <a href="../images/pexels-philippedonn-1169754.png"
+            ><img
+              class="booking-card-image"
+              src="../images/pexels-philippedonn-1169754.png"
+          /></a>
+        </div>
+        <div class="booking-card">
+          <a href="../images/pexels-pixabay-73873.png"
+            ><img
+              class="booking-card-image"
+              src="../images/pexels-pixabay-73873.png"
+          /></a>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="footer-container">
@@ -78,6 +146,9 @@
         <em>© 2024. All rights reserved.</em>
       </div>
     </footer>
+    <script type="text/javascript">
+      new SimpleLightbox("#gallery a", { nav: true, animationSpeed: 3000 });
+    </script>
     <script src="../javaScript/app.js"></script>
   </body>
 </html>

@@ -23,3 +23,14 @@ function handleKeyPress(event) {
     event.target.click();
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".navbar-links a");
+  const currentPage = window.location.pathname;
+
+  links.forEach((link) => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
