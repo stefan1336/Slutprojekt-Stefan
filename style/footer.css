@@ -5,8 +5,7 @@
   align-items: center;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
-    -1px 1px 0 black;
+  text-shadow: var(--primary-text-shadow);
   position: relative;
   padding: 10px;
   bottom: 0;
