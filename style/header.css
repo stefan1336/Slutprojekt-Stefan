@@ -28,7 +28,7 @@
 
 .dark-mode li a:focus {
   background-color: rgba(45, 45, 45, 0.5);
-  box-shadow: 0 0 2px 1px #eb212e;
+  box-shadow: var(--secondary-color);
   text-shadow: var(--primary-text-shadow);
   border-radius: 10px;
   outline: none;
